@@ -9,7 +9,7 @@
 class MyQueue {
 
 public:
-    // Конструктор, по умолчанию вместимость стека нулевая.
+    // Конструктор, по умолчанию вместимость очереди нулевая.
     MyQueue(const int len = 0) {
         this->cap = len;
         this->data = new int[len];
@@ -46,7 +46,7 @@ public:
         this->tail++;
         this->count++;
     }
-
+    
     // Вытащить последний элемент
     int dequeue() {
         if (!isEmpty()) {
